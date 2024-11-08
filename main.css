@@ -222,3 +222,63 @@ body{
     font-size: 1.8rem;
     color:var(--mainColordark)
 }
+#des p{
+    font-size: 1.4em;
+
+}
+#des button{
+    /* height: 40px; */
+    width: 40%;
+    border-radius: 20px;
+    background-color: var(--mainColordark);
+    font-size: 1.8em;
+    color:var(--mainColorPale);
+    padding: 20px;
+    margin: 20px 0;
+    border:none;
+    box-shadow: 2px 2px 12px var(--mainColordark);
+}
+#featbox{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    margin:12px 10px;
+    box-shadow: 7px 9px 4px var(--mainColordark);
+    padding: 10px 20px;
+    border-radius: 6px;
+    border-top: 2px solid ;
+    border-left: 2px solid ;
+}
+#featbox img{
+    border-radius: 50%;
+    width: 50%;
+    margin:10px auto;
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cta{
+    display: flex;
+    padding: 20px;
+    
+    flex-direction: column;
+}
+
+.cta img{
+    display:flex;
+    width: 100%;
+}
+.cta h5{
+    font-size: 2.7em;
+    margin:12px 0;
+    
+}
+.cta address{
+    font-size: .7em;
+    display: flex;
+    flex-direction: column;
+}
