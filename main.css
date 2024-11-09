@@ -19,18 +19,24 @@
 body{
     background-color: color-mix(in srgb, var(--mainColorPale), white 20%);
     width: 100%;
-    min-width: 375px;
+    /* min-width: 375px; */
     margin:0 auto;
 }
 
 
 #header{
-    background-color: #fff;
-    padding: 5px;
+    background-color: var(--mainColordark);
+    /* backdrop-filter: blur(50px); */
+    background-image: url('./public/MIDWIFE\ INSPIRED\ PLUS\ \(4\).png');
+    background-position: 10% 49%;
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: space-between;
     border-bottom: 15px solid var(--mainColordark);
+    /* padding-bottom:40px; */
     display:grid;
-
+    position: relative;
+    height: 40vh;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(2,1fr);
     background-color: var(--mainColorLight);
@@ -39,8 +45,19 @@ body{
 .brand{
     display: flex;
     grid-column: 1/6;
-    color:var(--mainColordark);
-    font-size: 14px;
+    mix-blend-mode: screen;
+    /* background-color:rgba(255, 255, 255, 0.02); */
+    /* padding: 3px; */
+    /* color:color-mix(in srgb, var(--mainColordark) 82%, white 12%); */
+    color: white;
+    backdrop-filter: blur(72px);
+    /* border-radius: 50%; */
+    text-shadow: 0 0 7px red;
+    /* transform: rotateZ(-10deg); */
+    transition: all .5s ease;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4em;
 }
 
 .socialMedia{
@@ -61,17 +78,28 @@ body{
 }
 .contact .phone{
     display: none;
-    
 }
 
 .usr{
+    position: absolute;
+    top:30%;
+    background-color: var(--mainColorPale);
+    padding: 10px;
+    border-radius: 50%;
+    right:5px;
     /* margin: 0 15px; */
     color:var(--mainColordark)
 }
 .cart{
     position: relative;
-    color:var(--mainColorbase);
+    color:var(--mainColordark);
     /* margin: 0 15px; */
+    background-color: var(--mainColorPale);
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top:2px;
+    right:5px;
 }
 .cart span{
     position:absolute;
@@ -79,6 +107,7 @@ body{
     color:red;
     top:-10;
     right:0;
+    /* background-color: #fff; */
     font-weight: bolder;
 }
 #header form{
@@ -93,7 +122,9 @@ body{
 }
 #header form input{
     width: 90%;
-    border:none;
+    border-top: 3px solid var(--mainColordark);
+    border-left: 3px solid var(--mainColordark);
+    /* border:none; */
 }
 #header form button{
     width: 10%;
@@ -106,20 +137,28 @@ body{
     margin: auto;
     height: fit-content;
     border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    right:10px;
     padding: 6px;
 }
-#desktop{
+#desktop ul{
     display: none;
 }
 
- #mobile{
+
+ .mobile{
     display:none;
     width: 100%;
-    background-color: #fff;
     height: 70vh;
     background-color: color-mix(in srgb, var(--mainColorPale) , white 70%);
     font-size: 1.7em;
     padding: 10px;
+    transform:translateX(150%);
+    transition:all 1.5s ease;
+}
+.mobile.active{
+transform:translateX(0);
 }
 #mobile ul{
     display:flex;
@@ -143,7 +182,7 @@ body{
 .hero{
     background-image: url('./public/MIP\ hompage\ photo\ \(1\).jpg');
     background-size: cover;
-    height: 70vh;
+    height: 60vh;
     color:var(--mainColorPale);
     padding:20px;
     text-align: center;
