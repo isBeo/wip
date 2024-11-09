@@ -45,12 +45,12 @@ body{
 .brand{
     display: flex;
     grid-column: 1/6;
-    mix-blend-mode: screen;
     color: white;
     backdrop-filter: blur(2px);
     /* border-radius: 50%; */
-    text-shadow: 0 0 7px black;
-    /* transform: rotateZ(-10deg); */
+    text-shadow: 0 0 70px black;
+    text-shadow: -4px -4px 1px var(--mainColordark);
+    transform: rotateZ(-10deg);
     transition: all .5s ease;
     justify-content: space-around;
     align-items: center;
@@ -184,18 +184,30 @@ body{
     padding:20px;
     text-align: center;
     position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+h2{
+
 }
 .hero h2,h4{
+    background-color: rgba(255, 255, 255, 0.109);
     font-size: 3em;
+    text-shadow: 0 0 34px black;
+    text-shadow: 0 0 4px var(--mainColordark);
+    backdrop-filter: blur(2px);
 }
 
 .hero h4{
+    background-color: rgba(255, 255, 255, 0.209);
     /* font-size: 1.2em; */
     backdrop-filter: blur(2px);
-    background-color: rgba(255, 255, 255, 0.209);
     margin-top: 1em;
     color:var(--mainColordark);
+    color:var(--mainColordark);
     text-shadow: 0 0 4px white;
+    /* position: absolute; */
     text-shadow: 0 0 4px var(--mainColorLight);
 }
 
