@@ -185,12 +185,18 @@ transform:translateX(0);
     text-align: center;
     position:relative;
 }
-.hero h2{
+.hero h2,h4{
     font-size: 3em;
 }
 
 .hero h4{
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.209);
+    margin-top: 1em;
+    color:var(--mainColordark);
+    text-shadow: 0 0 4px white;
+    text-shadow: 0 0 4px var(--mainColorLight);
 }
 
 .hero button{
@@ -238,6 +244,7 @@ transform:translateX(0);
     background-color: #ffffff41;
     padding: 10px;
     backdrop-filter: blur(5px);
+
     border-radius: 10%;
     top: 0;
     color:var(--mainColorLight);
@@ -320,4 +327,16 @@ transform:translateX(0);
     font-size: .7em;
     display: flex;
     flex-direction: column;
+    outline:1px solid red;
+    display:flex
+}
+
+
+footer{
+    background-color: var(--mainColordark);
+    /* height: 300px; */
+    padding: 16px;
+    text-align: center;
+    color:white;
+    font-size: 1.2em;
 }
